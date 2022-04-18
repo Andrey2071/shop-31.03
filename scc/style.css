@@ -1,0 +1,21 @@
+:root {
+    --black-bkg: #222222;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.header {
+    background-color: var(--black-bkg);
+}
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+}
+.header__list {
+    display: flex;
+}
+.header__nav {
+    display: none;
+}
