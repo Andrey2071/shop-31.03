@@ -1,5 +1,8 @@
 :root {
     --black-bkg: #222222;
+    --light-pink: #F1E4E6;
+    --dark-pink: #F16D7F;
+    --sales-bkg-color: #4F4745;
 }
 
 .container {
@@ -16,6 +19,75 @@
 .header__list {
     display: flex;
 }
+.header__logo {
+    margin: 0 41px 0 0;
+}
 .header__nav {
     display: none;
+}
+.header__link {
+    margin: 0 0 0 34px;
+}
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+.brand {
+    display: flex;
+    margin: 0 0 62px 0;
+}
+.brand__title-wrp {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    align-items: center;
+    background-color: var(--light-pink);
+}
+.brand__title {
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+.brand__subtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+}
+.brand__subtitle-pink {
+    color: var(--dark-pink);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sales__item {
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 260px;
+    width: 360px;
+    background-color: var(--sales-bkg-color);
+    
+}
+/*
+.sales__item--women {
+    background-image: url();
+}
+*/
+.sales__item--accesories {
+    width: 100%;
 }
